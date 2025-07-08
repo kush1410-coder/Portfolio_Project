@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f2f5, #ffffff);
+      color: #333;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Profile Picture Styling - Rectangular Image */
+    .profile-pic {
+      flex: 1 1 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-pic img {
+      width: 300px; /* Adjust to your preferred width */
+      height: 500px; /* Adjust to your preferred height */
+      object-fit: cover;
+      border: 5px solid lightcyan;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .profile-pic img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+    }
+
+    /* Content Styling */
+    .about-content {
+      flex: 2 1 500px;
+    }
+
+    /* Updated Font for Heading */
+    .about-content h1 {
+      font-family: 'Poppins', sans-serif; /* Using Poppins font */
+      font-size: 3rem;
+      color: #0077b6;
+      margin-bottom: 20px;
+      font-weight: 600; /* Bold weight */
+      letter-spacing: 1px;
+    }
+
+    .about-content p {
+      font-size: 1.15rem;
+      color: #444;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .about-content p span {
+      font-weight: 600;
+      color: #000;
+    }
+
+    footer {
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: #005f8e;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .about-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-content p {
+        font-size: 1rem;
+      }
+
+      .profile-pic img {
+        width: 250px; /* Adjust for smaller screens */
+        height: 160px; /* Adjust for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container">
+    <div class="profile-pic">
+      <img src="photo.jpeg" alt="Kushagra Varshney">
+    </div>
+    <div class="about-content">
+      <h1>Hi, I'm Kushagra 👋</h1>
+      <p>
+        I'm a <span>web developer</span> and a <span>first-year student at NIT Agartala</span>, deeply passionate about building clean, responsive websites that don't just look good, but feel right to use.
+        Whether it’s <span>crafting pixel-perfect front-ends</span> or exploring <span>logic-heavy back-ends</span>, I thrive in the process of turning ideas into functional digital experiences.
+      </p>
+      <p>
+        I'm currently focused on improving my skills in <span>C++</span> and <span>Data Structures & Algorithms</span>, while also building projects using <span>HTML, CSS,</span> and <span>a little JavaScript</span> to fuel my love for interactive design.
+      </p>
+      <footer>
+        <p>Feel free to <a href="contact.html">reach out</a> for collaborations, projects, or just a good tech talk.</p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>

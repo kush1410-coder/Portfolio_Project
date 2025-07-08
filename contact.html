@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2.5rem;
+            color: #0077b6;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .contact-info .emoji {
+            font-size: 1.5rem;
+            color: #0077b6;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #005f8e;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #005f8e;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>I'd love to connect! Whether you have a project in mind, want to collaborate, or just want to say hi — feel free to reach out:</p>
+
+        <div class="contact-info">
+            <p><span class="emoji">📧</span>Email: <a href="mailto:kushvarshney17@gmail.com">kushvarshney17@gmail.com</a></p>
+            <p><span class="emoji">📞</span>Phone: +91-8077197549</p>
+        </div>
+
+        <footer>
+            <p>Feel free to <a href="portfolio.html">check out my portfolio</a> or <a href="about.html">learn more about me</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>

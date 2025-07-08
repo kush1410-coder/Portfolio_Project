@@ -1,0 +1,140 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #ffffff;
+  padding: 15px 0;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav div {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077b6;
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main img[alt=""] {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+main > div {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #0077b6;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Project List */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+figure {
+  max-width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+figure:hover {
+  transform: translateY(-5px);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 15px;
+  background-color: #f0f8ff;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0077b6;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

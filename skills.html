@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            padding: 40px 20px;
+            margin: 60px auto;
+            max-width: 1100px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skills-section:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Heading Styling */
+        .skills-section h2 {
+            font-size: 2.2rem;
+            color: black;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Paragraph Styling */
+        .skills-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #444;
+            text-align: center;
+        }
+
+        /* Skills Grid Layout */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        /* Individual Skill Card */
+        .skill-card {
+            background-color: #f0f8ff;
+            border-left: 5px solid #0077b6;
+            padding: 25px;
+            border-radius: 8px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Skill Title */
+        .skill-card h3 {
+            color: #0077b6;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* Skill Description */
+        .skill-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .skills-section {
+                padding: 30px;
+                margin: 40px auto;
+            }
+
+            .skills-grid {
+                gap: 20px;
+            }
+
+            .skill-card {
+                flex: 1 1 100%;
+                max-width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="skills-section">
+        <h2>My Skills & Tech Stack</h2>
+        <p>
+            I’m passionate about both programming logic and creating beautiful user interfaces. Here's a breakdown of the technologies I’ve been working with as I grow my web development and problem-solving journey:
+        </p>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>C++ & DSA</h3>
+                <p>Strong foundation in C++ and problem-solving. I regularly practice Data Structures & Algorithms, including arrays, trees, graphs, and recursion. I enjoy participating in coding challenges and improving my logic every day.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>HTML & CSS</h3>
+                <p>Confident in building clean, semantic HTML and styling with modern CSS. I’ve created responsive layouts, handled flexbox and grid, and paid attention to design detail and accessibility.</p>
+            </div>
+        
+            <div class="skill-card">
+                <h3>JavaScript (Basics)</h3>
+                <p>Currently exploring JavaScript to add interactivity and dynamic features to websites. I’m learning about DOM manipulation, events, and beginner-level logic.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
